@@ -42,8 +42,13 @@ public class StudentController : MonoBehaviour
     public int addStamina(int value)
     {
         int answer = this.maxStamina + value;
-        if (answer )
-        return answer;
+        if (answer <100) {
+            return answer;
+        }
+        else
+        {
+            return 100;
+        }
     }
 
     void FixedUpdate()
