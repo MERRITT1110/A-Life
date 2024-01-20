@@ -7,7 +7,7 @@ public class Activity : MonoBehaviour
     private Activity_class aActivity;
    
     // Start is called before the first frame update
-    void Start(Activity_class pActivity)
+    public Activity(Activity_class pActivity)
     {
         this.aActivity = pActivity;
     }
