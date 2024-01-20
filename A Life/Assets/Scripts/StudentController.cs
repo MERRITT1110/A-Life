@@ -39,6 +39,7 @@ public class StudentController : MonoBehaviour
     }
 
     // set a addmethod with restrictions
+
     public int addStamina(int value)
     {
         int answer = this.maxStamina + value;
