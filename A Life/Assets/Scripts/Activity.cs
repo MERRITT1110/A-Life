@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Activity : MonoBehaviour
+{
+    private Activity_class aActivity;
+   
+    // Start is called before the first frame update
+    void Start(Activity_class pActivity)
+    {
+        this.aActivity = pActivity;
+    }
+
+    // Update is called once per frame
+    public void Relaxmethod()
+    {
+        StudentController student1 = new StudentController();
+        int studentStamina = student1.getMaxStamina();
+        if (studentStamina )
+    }
+}

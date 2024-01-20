@@ -8,13 +8,18 @@ public class StudentController : MonoBehaviour
 
     Rigidbody2D rigidbody2d;
 
+    float GradeScale;
+    float LinkedonConnection;
     float horizontal;
     float vertical;
+    private int maxStamina = 100;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        GradeScale = 0;
+        LinkedonConnection = 0;
     }
 
     // Update is called once per frame
@@ -22,6 +27,15 @@ public class StudentController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+    }
+    public int getMaxStamina()
+    {
+        return this.maxStamina;
+    }
+
+    public void setMaxStamina(int a)
+    {
+        this.maxStamina = a;
     }
 
     void FixedUpdate()
