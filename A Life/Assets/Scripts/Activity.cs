@@ -17,6 +17,9 @@ public class Activity : MonoBehaviour
     {
         StudentController student1 = new StudentController();
         int studentStamina = student1.getMaxStamina();
-        if (studentStamina )
+        if (studentStamina < 80 && studentStamina > 0)
+        {
+
+        }
     }
 }

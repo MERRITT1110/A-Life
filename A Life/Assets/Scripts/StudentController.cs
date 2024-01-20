@@ -38,6 +38,14 @@ public class StudentController : MonoBehaviour
         this.maxStamina = a;
     }
 
+    // set a 
+    public int addStamina(int value)
+    {
+        int answer = this.maxStamina + value;
+        if (answer )
+        return answer;
+    }
+
     void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
