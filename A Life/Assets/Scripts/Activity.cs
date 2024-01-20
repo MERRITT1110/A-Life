@@ -19,7 +19,7 @@ public class Activity : MonoBehaviour
         int studentStamina = student1.getMaxStamina();
         if (studentStamina < 80 && studentStamina > 0)
         {
-
+            int b = student1.addStamina(20);
         }
     }
 }
